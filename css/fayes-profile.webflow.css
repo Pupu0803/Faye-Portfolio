@@ -1886,3 +1886,9 @@ img {
     max-width: 280px;
   }
 }
+
+ .body {
+      transform: scale(0.9); 
+      transform-origin: top left; 
+      overflow-x: hidden;
+    }
