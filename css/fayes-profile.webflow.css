@@ -820,6 +820,27 @@ img {
   display: flex;
 }
 
+/* 新增说明文字样式 */
+.find-ui-description {
+    display: flex;
+    flex-direction: column; /* 文字在上，图片在下 */
+    margin-left: 20px;      /* 与标题间距 */
+}
+
+/* 新增文字 + 图片上下排列，只影响这一段 */
+.text-block-4 {
+    font-size: 14px;
+    margin-bottom: 5px; /* 与图片间距 */
+}
+
+.skills .text-block-4 + .words-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* 与下方原说明文字间距 */
+}
+
+
 .grid {
   grid-template-rows: 51px auto;
   grid-template-columns: .5fr 1fr;
@@ -908,12 +929,12 @@ img {
 
 .words-img {
   width: 1006px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   padding-left: 0;
 }
 
 .text-block-4 {
-  margin-top: 40px;
+ 
   padding-left: 0;
 }
 
@@ -1267,7 +1288,7 @@ img {
 
 .container-about-image {
   background-color: #fde7be8a;
-  background-image: url('../images/60240.jpg');
+  background-image: url('../images/310738-p-500.png');
   background-position: 50% 0;
   background-repeat: repeat;
   background-size: 2000px;
@@ -1276,6 +1297,20 @@ img {
   margin-bottom: 80px;
   padding: 40px 280px;
   display: flex;
+}
+
+/* 中等屏幕 (平板) */
+@media (min-width: 768px) {
+  .container-about-image {
+    background-image: url('../images/310738-p-1080.png');
+  }
+}
+
+/* 大屏幕 (桌面) */
+@media (min-width: 1200px) {
+  .container-about-image {
+    background-image: url('../images/310738.png'); /* 原始大图 */
+  }
 }
 
 .div-about-tp {
@@ -1303,12 +1338,14 @@ img {
 
 .div-block-12 {
   padding-top: 20px;
+  display: flex;
 }
 
 .div-block-13 {
   margin-top: 20px;
   display: flex;
-}
+} 
+
 
 .text-block-7, .text-block-8 {
   padding-left: 0;
