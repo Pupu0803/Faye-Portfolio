@@ -126,8 +126,8 @@ img {
 
 .image {
   mix-blend-mode: normal;
-  border-radius: 100px;
-  box-shadow: 0 2px 13px 11px #00000014;
+  /* border-radius: 100px;
+  box-shadow: 0 2px 13px 11px #00000014; */
 }
 
 .button-resume {
