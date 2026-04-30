@@ -1962,3 +1962,36 @@ img {
     max-width: 280px;
   }
 }
+
+/* 新加点击图片放大*/
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+/* 图片 */
+#modalImg {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* 箭头 */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav.left { left: 20px; }
+.nav.right { right: 20px; }
+
+
