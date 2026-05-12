@@ -925,6 +925,8 @@ img {
   margin-bottom: 0;
   padding-left: 0;
   font-size: 14px;
+  max-width: 650px;      /* 加这行 */
+  width: 100%;           /* 加这行 */
 }
 
 .words-img {
